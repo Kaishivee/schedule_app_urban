@@ -1,0 +1,16 @@
+{% extends 'schedule/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    {% if form.instance.pk %}Редактировать урок{% else %}Добавить урок{% endif %}
+{% endblock %}
+
+{% block content %}
+    <h1>{% if form.instance.pk %}Редактировать{% else %}Добавить{% endif %} урок</h1>
+    <form method="post" class="mt-4">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-success">Сохранить</button>
+        <a href="{% url 'schedule' %}" class="btn btn-secondary">Отмена</a>
+    </form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'schedule/base.html' %}
+
+{% block title %}Удалить урок{% endblock %}
+
+{% block content %}
+    <h1 class="mb-4">Удалить урок "{{ lesson.name }}"?</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Да, удалить</button>
+        <a href="{% url 'schedule' %}" class="btn btn-secondary">Отмена</a>
+    </form>
+{% endblock %}
