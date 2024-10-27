@@ -25,7 +25,7 @@ Django 3.x или выше
 Инструкции по установке
 Клонируйте репозиторий с помощью Git:
 
-git clone https://github.com/ваш_логин/my_schedule.git
+git clone https://github.com/Kaishivee/schedule_app_urban.git
 Перейдите в каталог проекта:
 
 cd my_schedule
