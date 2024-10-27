@@ -1,10 +1,12 @@
 from django.db import models
 
+
 class Group(models.Model):
     name = models.CharField("Название группы", max_length=100)
 
     def __str__(self):
         return self.name
+
 
 class Lesson(models.Model):
     DAYS_OF_WEEK = [
