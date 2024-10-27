@@ -26,9 +26,11 @@ Django 3.x или выше
 Клонируйте репозиторий с помощью Git:
 
 git clone https://github.com/Kaishivee/schedule_app_urban.git
+
 Перейдите в каталог проекта:
 
 cd my_schedule
+
 Создайте и активируйте виртуальное окружение:
 
 python -m venv venv
